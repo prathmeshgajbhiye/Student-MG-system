@@ -1,0 +1,15 @@
+<hibernate-configuration>
+    <session-factory>
+        <property name="hibernate.connection.driver_class">org.postgresql.Driver</property>
+        <property name="hibernate.connection.url">jdbc:postgresql://localhost:5432/student_db</property>
+        <property name="hibernate.connection.username">your_username</property>
+        <property name="hibernate.connection.password">your_password</property>
+        <property name="hibernate.dialect">org.hibernate.dialect.PostgreSQLDialect</property>
+        <property name="hibernate.show_sql">true</property>
+        <property name="hibernate.hbm2ddl.auto">update</property>
+        <mapping class="com.example.sms.Student"/>
+        <mapping class="com.example.sms.Branch"/>
+        <mapping class="com.example.sms.Course"/>
+        <mapping class="com.example.sms.Marks"/>
+    </session-factory>
+</hibernate-configuration>
